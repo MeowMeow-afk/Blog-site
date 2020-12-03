@@ -1,0 +1,226 @@
+/* header and footer styling */
+
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: simplifica;
+  src: url(fonts/SIMPLIFICA_Typeface.ttf);
+}
+@font-face {
+  font-family: Baufra;
+  src: url(fonts/Baufra-Medium.ttf);
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #758a77;
+}
+.nav h1 {
+  font-family: simplifica;
+  font-weight: bolder;
+  letter-spacing: 10px;
+  margin-left: 158px;
+  margin-right: auto;
+}
+.nav-list {
+  margin-right: 120px;
+}
+.nav-list ul {
+  margin-top: 27px;
+}
+.nav-list ul li {
+  font-family: Baufra;
+  font-weight: bold;
+  letter-spacing: 8px;
+  cursor: pointer;
+  display: inline;
+  margin-left: 70px;
+}
+.nav-list ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer {
+  background-color: #758a77;
+  font-family: Baufra;
+  font-weight: bold;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+}
+
+/* compose page  */
+
+.compose {
+  font-family: "Ubuntu", sans-serif;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.compose h1 {
+  letter-spacing: 1px;
+  color: #465247;
+}
+.composeform h3 {
+  margin: 20px auto 10px 0px;
+  letter-spacing: 2px;
+  color: #465247;
+}
+.composeform input,
+button {
+  display: block;
+}
+.composeform input {
+  font-size: 20px;
+  color: #465247;
+  border-width: 0 0;
+  border-bottom: 2px solid #758a77;
+  width: 40%;
+}
+.composeform input:focus {
+  border-color: #465247;
+}
+.composeform textarea {
+  font-weight: 600;
+  font-size: 20px;
+  color: #465247;
+  border-color: #758a77;
+  width: 791px;
+  height: 280px;
+  padding: 10px;
+  border-radius: 3px;
+}
+.composeform textarea:focus {
+  border-color: #465247;
+}
+.composeform .btn {
+  -webkit-border-radius: 17;
+  -moz-border-radius: 17;
+  margin-top: 10px;
+  border-radius: 17px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 19px;
+  background: #758a77;
+  padding: 11px 17px 10px 20px;
+  text-decoration: none;
+}
+
+.composeform .btn:hover {
+  background: #465247;
+  text-decoration: none;
+}
+
+/* home page style */
+
+.home {
+  margin-top: 20px;
+  text-align: left;
+}
+.home-inner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.home-example {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+}
+.home-inner-example h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: lighter;
+  font-size: 40px;
+  color: #465247;
+  margin-top: 0;
+}
+.home-inner-example p {
+  font-weight: normal;
+  font-size: 20px;
+  color: #465247;
+}
+.home-inner-example {
+  margin-left: 158px;
+}
+.home-compose a {
+  text-decoration: none;
+}
+.home-compose {
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 650px;
+  background-color: #465247;
+  transform: scale(1);
+  transition: all 0.2s linear;
+}
+.home-compose h1 {
+  color: #eaffd0;
+  margin: 1px 0px 0px 0px;
+  font-size: 40px;
+}
+.home-compose:hover {
+  transform: scale(0.9);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.home-inner1 h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: lighter;
+  font-size: 40px;
+  color: #465247;
+  margin-top: 0;
+}
+.home-inner1 p {
+  font-weight: normal;
+  font-size: 20px;
+  color: #465247;
+}
+.home-inner1 {
+  margin-left: 158px;
+}
+.home-inner:nth-child(2n) {
+  background-color: #eaffd0;
+}
+.home-inner1 a {
+  color: #465247;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.2s ease-in;
+}
+.home-inner1 a:hover {
+  opacity: 1;
+}
+/* post styling */
+.post {
+  font-family: "Ubuntu", sans-serif;
+  margin: 10px 158px;
+}
+.heading {
+  text-transform: capitalize;
+  color: #465247;
+  letter-spacing: 1px;
+  margin-top: 50px;
+}
+.post p {
+  margin-top: 50px;
+  color: #465247;
+  line-height: 2;
+  word-spacing: 3px;
+  font-size: large;
+}

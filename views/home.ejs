@@ -1,0 +1,26 @@
+<%- include('partials/header'); -%>
+<div class="home">
+    <div class="home-example">
+        <div class="home-inner-example">
+            <h2>Compose</h2>
+            <p>Either write something worth reading or do something worth writing.</p>
+        </div>
+        <div class="home-compose">
+           <a href="/compose"><h1>+</h1></a>
+        </div>
+    </div>
+<% post.forEach(function(data){ %>
+        <div class="home-inner">
+        <div class="home-inner1">
+            <h2><%= data.heading %></h2>
+            <p>
+                <%= data.content.slice(0,110)%> ...
+                <a href="/post/?postName=<%= data.heading %>">Read more</a>
+            </p>
+        </div>
+    </div>
+    <% }) %>
+</div>
+
+
+<%- include('partials/footer'); -%>
